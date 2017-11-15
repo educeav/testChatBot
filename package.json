@@ -1,0 +1,23 @@
+{
+  "name": "testchatbot",
+  "version": "1.0.0",
+  "description": "es un chat bot de ejemplo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/educeav/testChatBot.git"
+  },
+  "keywords": [
+    "ejemplo",
+    "test"
+  ],
+  "author": "Eduardo Anchundia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/educeav/testChatBot/issues"
+  },
+  "homepage": "https://github.com/educeav/testChatBot#readme"
+}
