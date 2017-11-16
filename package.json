@@ -4,6 +4,7 @@
   "description": "es un chat bot de ejemplo",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/educeav/testChatBot/issues"
   },
-  "homepage": "https://github.com/educeav/testChatBot#readme"
+  "homepage": "https://github.com/educeav/testChatBot#readme",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "body-parser": "^1.18.2",
+    "config": "^1.28.1",
+    "express": "^4.16.2",
+    "request": "^2.83.0",
+    "uuid": "^3.1.0"
+  }
 }
