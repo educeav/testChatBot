@@ -335,6 +335,27 @@ function sendToBot(senderID, message) {
 				const fulfillment = result.fulfillment;
 				if(fulfillment && fulfillment.speech && fulfillment.speech.length > 0){
 					sendTextMessage(senderID, fulfillment.speech);
+				} else {
+					const action = result.action;
+					console.log('action: ', action);
+					console.log('parameters: ', parameters);
+					siwtch(action) {
+						case 'account.balance':
+						sendTextMessage(senderID, 'get account.balance');
+						break;
+						case 'account.movement':
+						sendTextMessage(senderID, 'get account.movement');
+						break;
+						case 'account_balance':
+						sendTextMessage(senderID, 'get account_balance');
+						break;
+						case 'balance':
+						sendTextMessage(senderID, 'get balance');
+						break;
+						default: 
+							console.log('unknown action');
+						break;
+					}
 				}
 			}
 		}
