@@ -333,7 +333,7 @@ function sendToBot(senderID, message) {
 			if(result){
 				cont fulfillment = result.fulfillment;
 				if(fulfillment && fulfillment.speech.length > 0){
-					sendTextMessage(senderID,fulfillment.speech)
+					sendTextMessage(senderID,fulfillment.speech);
 				}
 			}
 		}
