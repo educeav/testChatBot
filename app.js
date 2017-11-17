@@ -339,7 +339,7 @@ function sendToBot(senderID, message) {
 					const action = result.action;
 					console.log('action: ', action);
 					console.log('parameters: ', parameters);
-					siwtch(action) {
+					switch(action) {
 						case 'account.balance':
 						sendTextMessage(senderID, 'get account.balance');
 						break;
