@@ -1,7 +1,7 @@
 {
-  "name": "testchatbot",
+  "name": "samplebot",
   "version": "1.0.0",
-  "description": "es un chat bot de ejemplo",
+  "description": "Chatbot",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -9,18 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/educeav/testChatBot.git"
+    "url": "git+https://github.com/fakerabbit/samplebot.git"
   },
-  "keywords": [
-    "ejemplo",
-    "test"
-  ],
-  "author": "Eduardo Anchundia",
+  "author": "Mirko Justiniano",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/educeav/testChatBot/issues"
+    "url": "https://github.com/fakerabbit/samplebot/issues"
   },
-  "homepage": "https://github.com/educeav/testChatBot#readme",
+  "homepage": "https://github.com/fakerabbit/samplebot#readme",
   "dependencies": {
     "apiai": "^4.0.3",
     "body-parser": "^1.18.2",
