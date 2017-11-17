@@ -314,8 +314,7 @@ function handleMessage(currentUser, senderID, message, isEcho, messageId, appId,
       getUsername(senderID);
     }
     else {
-      sendTextMessage(senderID, messageText);
-	  
+      sendTextMessage(senderID, messageText);	  
     }
   }
   else if (messageAttachments) {
@@ -329,7 +328,16 @@ function sendToBot(senderID, message) {
     sessionId: senderID});
 
 	request.on('response', function(response) {
-		console.log(response);});
+		console.log(response);
+		if(response){
+			if(result){
+				cont fulfillment = result.fulfillment;
+				if(fulfillment && fulfillment.speech.length > 0){
+					sendTextMessage(senderID,fulfillment.speech)
+				}
+			}
+		}
+		});
 
 	request.on('error', function(error) {
 		console.log(error);});
