@@ -346,7 +346,7 @@ function sendToBot(senderID, message) {
 						case 'account.movement':
 						sendTextMessage(senderID, 'get account.movement');
 						break;
-						case 'account_balance':
+						case 'accion_balance':
 						sendTextMessage(senderID, 'get account_balance');
 						break;
 						case 'balance':
